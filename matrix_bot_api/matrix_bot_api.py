@@ -11,6 +11,8 @@ class MatrixBotAPI:
     # password - Matrix password
     # server   - Matrix server url : port
     # rooms    - List of rooms ids to operate in, or None to accept all rooms
+    # exclusive_rooms - If True (the default), only the specified rooms will be
+    #            used, else they will simply be joined.
     def __init__(self, username, password, server,
                  rooms=None, exclusive_rooms=True):
         self.username = username
